@@ -16,3 +16,7 @@ Marcelo Bastos
 ## How to Use
 
 To view this project click [here](https://github.com)
+
+## Credits
+
+[TOP](https://theodinproject.com)
