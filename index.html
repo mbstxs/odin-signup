@@ -11,20 +11,29 @@
 <body>
     <div id="main-cont">
         <div id="left-cont">
-            <div id="logo-cont">
-                Odin
+            <img id="bg-img" src="./assets/bg-img.jpg" alt="background">
+            <div>
+
+                <div id="logo-cont">
+                    <div>
+                        <img id="logo" src="./assets/odin-lined.png" alt="logo">
+                        <h1>ODIN</h1>
+                    </div>
+                </div>
+                <p>
+                    <a href="#"><u>Halie West</u> on <u>Unsplash</u></a>
+                </p>
             </div>
-            <p>
-                <a href="#">Halie West</a> on <a href="#">Unsplash</a>
-            </p>
         </div>
         <div id="right-cont">
-            <div id="heading">
-                <p>This is not a real online service! You know you need something
-                    <br>like this in your life to help you realize your deepest dreams.
-                    <br>Sign up now to get started.
-                </p>
-                <p>You know you want to.</p>
+            <div>
+                <div id="heading">
+                    <p>This is not a real online service! You know you need something
+                        <br>like this in your life to help you realize your deepest dreams.
+                        <br>Sign up now to get started.
+                    </p>
+                    <p>You know you want to.</p>
+                </div>
             </div>
             <form>
                 <div id="form-cont">
@@ -32,11 +41,11 @@
                     <div>
                         <div class="input-cont">
                             <label for="firstName">First Name</label>
-                            <input type="text" name="firstName" id="firstName">
+                            <input type="text" minlength="2" maxlength="14" name="firstName" id="firstName">
                         </div>
                         <div class="input-cont">
                             <label for="lastName">Last Name</label>
-                            <input type="text" name="lastName" id="lastName">
+                            <input type="text" minlength="2" maxlength="40" name="lastName" id="lastName">
                         </div>
                     </div>
                     <div>
@@ -51,20 +60,22 @@
                     </div>
                     <div>
                         <div class="input-cont">
-                            <label for="password">Password</label>
-                            <input type="password" name="password" id="password">
+                            <label for="password">Password (*)</label>
+                            <input type="password" required minlength="6" name="password" id="password">
                         </div>
                         <div class="input-cont">
-                            <label for="passwordConf">Confirm Password</label>
-                            <input type="password" name="passwordConf" id="passwordConf">
+                            <label for="passwordConf">Confirm Password (*)</label>
+                            <input type="password" required minlength="6" name="passwordConf" id="passwordConf">
                         </div>
                     </div>
                 </div>
                 <button type="submit">Create Account</button>
             </form>
-            <p>Already have an account? <a href="">Log in</a></p>
-
+            <div>
+                <p>Already have an account? <a href="">Log in</a></p>
+            </div>
         </div>
+    </div>
     </div>
 </body>
 

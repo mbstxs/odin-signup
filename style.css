@@ -1,9 +1,15 @@
 body {
-    --cont-padding: 2rem;
+    --cont-padding: 2.5rem;
     --bg-img: url("./assets/bg-img.jpg");
     --color-white: #fff;
     --bg-form: #f9fafb;
+    --color-green: #596D48;
     margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-white);
 }
 
 #main-cont {
@@ -16,12 +22,17 @@ body {
     background-image: #9e3535;
     width: 30vw;
     height: 100vh;
+}
+
+#left-cont>div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-top: 172px;
+    height: calc(100% - 180px);
 }
 
-img {
+#bg-img {
     width: 30vw;
     height: 100vh;
     object-fit: fill;
@@ -29,9 +40,23 @@ img {
 }
 
 #logo-cont {
-    padding: 0 var(--cont-padding);
+    width: 100%;
     position: relative;
     color: var(--color-white);
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+#logo-cont>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#logo {
+    width: 75px;
+    height: 90px
 }
 
 #left-cont p {
@@ -41,27 +66,78 @@ img {
 }
 
 #right-cont {
-    padding: 0 var(--cont-padding);
     width: 70vw;
     background-color: #f9fafb;
     justify-content: center;
+    font-size: 20px;
+    padding-top: 100px;
 }
 
-/* #form-cont { */
-/* gap: 2rem; */
-/* } */
+#right-cont>div,
+form>div {
+    padding: 0 var(--cont-padding);
+
+}
+
+#heading {
+    font-weight: 600;
+}
+
+#right-cont p a {
+    color: var(--color-green)
+}
 
 form>div {
     background-color: var(--color-white);
     width: 100%;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#form-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    height: 312px;
 }
 
 #form-cont>div {
     display: flex;
-    gap: 4rem;
+    gap: 5rem;
+    font-size: 12px;
+    text-transform: uppercase;
 }
 
 .input-cont {
     display: flex;
     flex-direction: column;
+    gap: 8px;
+}
+
+input {
+    height: 22px;
+    width: 200px;
+    border-radius: 4px;
+    border: 1.5px solid #eee;
+    font-size: 14px;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:focus {
+    border-color: rgb(149, 178, 245);
+}
+
+button {
+    background-color: var(--color-green);
+    padding: 0.7rem 2rem;
+    color: var(--color-white);
+    font-size: 16px;
+    border-radius: 8px;
+    margin: 32px var(--cont-padding) 0;
+}
+
+#right-cont:last-child p {
+    font-size: 16px;
 }
