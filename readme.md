@@ -15,7 +15,7 @@ Marcelo Bastos
 
 ## How to Use
 
-To view this project click [here](https://github.com)
+To view this project click [here](https://mbstxs.github.io/odin-signup/)
 
 ## Credits
 
